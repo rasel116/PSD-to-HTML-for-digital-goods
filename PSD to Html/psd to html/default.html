@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Safe VPN For Windows</title>
+
+    <link rel="icon" type="image/png" href="../Media/final logo.png" />
+
+
+    <!--Roboto font link-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+    <link href="CssPages/font-awesome.css" rel="stylesheet" />
+    <!--<link href="pages/myStylesheet.css" rel="stylesheet" />-->
+    <link href="CssPages/myStylesheet.css" rel="stylesheet" />
+    <!--Contact Us-->
+    <link href="../CssPages/contactUs.css" rel="stylesheet" />
+    <script src="../javafile/contactUs.js"></script>
+
+    <link href="CssPages/Login.css" rel="stylesheet" />
+    <script src="javafile/Login.js"></script>
+
+    <link href="CssPages/SignupFormCss.css" rel="stylesheet" />
+    <script src="javafile/signupform.js"></script>
+
+
+</head>
+<body>
+
+    <header class="header">
+
+
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="Media/final logo.png" width="200" height="180" alt="Viper Techno." />
+
+                </a>
+            </div>
+
+            <nav class="menu">
+                <ul>
+
+
+
+                    <li><a href="#">Home</a></li>
+
+                    <!--<li><a href="#"></a>CountryHost</li>-->
+                    <li>
+                        <a href="HTMLPage/download.html">Download</a>
+                    </li>
+                    <li>
+                        <a href="HTMLPage/Pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="HTMLPage/ContactUs.html">Contact Us</a>
+                    </li>
+                    <button id="signup" onclick="document.getElementById('id01').style.display='block'" style="width:auto;margin-left:10px ;margin-right:10px;margin-bottom:200px;">Sign Up</button>
+                    <button id="login" onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:auto; margin-left:auto;">
+                        Login
+                    </button>
+
+                    <!--<li class="dropdown">
+                        <button class="dropbtn">LogIn</button>
+                        <div class="dropdown-content">
+                            <a href="LoginPopUp.html">LogIN</a>
+                            <a href="#">SignUp</a>
+
+                        </div>
+                    </li>-->
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+        <!--SignUp-->
+        <!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>-->
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+                <img src="Media/1.gif" alt="Avatar" class="avatar" />
+
+                <div class="container" style="color:darkslateblue">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom-container">
+                <div class="row">
+                    <div class="col">
+                        <a href="#" style="color:white" class="btn">Sign up</a>
+                    </div>
+                    <div class="col">
+                        <a href="#" style="color:white" class="btn">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SignUp-->
+        <!--LogIn-->
+        <!--<button onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">
+            LogIn
+        </button>-->
+        <div id="modal-wrapper" class="modal">
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                    <img src="Media/1.gif" alt="Avatar" class="avatar" />
+                    <h1 style="text-align:center; color:blueviolet">Please Confirm Login</h1>
+                </div>
+                <!--<div class="container">
+                    <input type="text" placeholder="Enter Username" name="uname">
+                    <input type="password" placeholder="Enter Password" name="psw">
+                    <button type="submit">Login</button>
+                    <input type="checkbox" style="margin:26px 30px;"> Remember me
+                    <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+                </div>-->
+                <!--===================-->
+                <div class="container1">
+
+                    <div class="row">
+                        <h2 style="text-align:center">Login with Social Media or Manually</h2>
+                        <div class="vl">
+                            <span class="vl-innertext">or</span>
+                        </div>
+
+                        <div class="col">
+                            <a href="#" class="fb btn">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="#" class="twitter btn">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="#" class="google btn">
+                                <i class="fa fa-google fa-fw">
+                                </i> Login with Google+
+                            </a>
+                        </div>
+
+                        <div class="col">
+                            <div class="hide-md-lg">
+                                <p>Or sign in manually:</p>
+                            </div>
+
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </div>
+
+                    </div>
+            </form>
+
+        </div>
+
+    </header>
+    <div style="text-align:center;float:unset">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DCgDokYnH6o" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="container" style="text-align:center">
+
+        <div class="banner-in">
+
+            <h1 style="color:blanchedalmond">Hide your IP Adress</h1>
+            <h4 style="color:burlywood">Disapear Yourself</h4>
+            <p>This is Your Current IP Address</p>
+
+            <div id="findipwidget"></div><div class="findiplink" id="findipurl">Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a></div>
+            <script defer src="//api.find-ip.net/widget.js?width=240&"></script>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--Login End-->
+    <!--2nd part(1st background)-->
+    <!--<section class="banner">-->
+    <!--</section>-->
+    <!--<img src="Media/curve.png " width="1200" alt="line" />-->
+    <!--===============Chat Button ===============================-->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1 style="color:forestgreen">Chat with Authority</h1>
+
+            <label for="msg"><b>Our Customer care</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+
+    </script>
+
+    <!--=============footer======================-->
+
+    <div class="footer">
+        <h3 style="color:brown">&copyReserve to VipreTechno</h3>
+        <h4>VipreTechno.Contact@Gmail.com</h4>
+    </div>
+</body>
+</html>
+
